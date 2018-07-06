@@ -12,6 +12,9 @@
 		FF6EA8C320EB712D00DCBF34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF6EA8C120EB712D00DCBF34 /* Main.storyboard */; };
 		FF6EA8C520EB712E00DCBF34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF6EA8C420EB712E00DCBF34 /* Assets.xcassets */; };
 		FF6EA8C820EB712E00DCBF34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF6EA8C620EB712E00DCBF34 /* LaunchScreen.storyboard */; };
+		FF6EA8D020EB7F8600DCBF34 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6EA8CF20EB7F8600DCBF34 /* Color.swift */; };
+		FFA18FFB20EE2F46004D4B53 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA18FFA20EE2F46004D4B53 /* MyCell.swift */; };
+		FFA18FFD20EE32B6004D4B53 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA18FFC20EE32B6004D4B53 /* HeaderCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		FF6EA8C420EB712E00DCBF34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF6EA8C720EB712E00DCBF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF6EA8C920EB712E00DCBF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF6EA8CF20EB7F8600DCBF34 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		FFA18FFA20EE2F46004D4B53 /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		FFA18FFC20EE32B6004D4B53 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 				FF6EA8BD20EB712D00DCBF34 /* AppDelegate.swift */,
 				FF6EA8BF20EB712D00DCBF34 /* ViewController.swift */,
 				FF6EA8C120EB712D00DCBF34 /* Main.storyboard */,
+				FFA18FFC20EE32B6004D4B53 /* HeaderCell.swift */,
+				FFA18FFA20EE2F46004D4B53 /* MyCell.swift */,
+				FF6EA8CF20EB7F8600DCBF34 /* Color.swift */,
 				FF6EA8C420EB712E00DCBF34 /* Assets.xcassets */,
 				FF6EA8C620EB712E00DCBF34 /* LaunchScreen.storyboard */,
 				FF6EA8C920EB712E00DCBF34 /* Info.plist */,
@@ -136,7 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF6EA8C020EB712D00DCBF34 /* ViewController.swift in Sources */,
+				FFA18FFD20EE32B6004D4B53 /* HeaderCell.swift in Sources */,
+				FFA18FFB20EE2F46004D4B53 /* MyCell.swift in Sources */,
 				FF6EA8BE20EB712D00DCBF34 /* AppDelegate.swift in Sources */,
+				FF6EA8D020EB7F8600DCBF34 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24A73E004253822B9E69FB52 /* Pods_moviee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D7993CA1E90C698C480C87 /* Pods_moviee.framework */; };
 		FF6EA8BE20EB712D00DCBF34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6EA8BD20EB712D00DCBF34 /* AppDelegate.swift */; };
 		FF6EA8C020EB712D00DCBF34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6EA8BF20EB712D00DCBF34 /* ViewController.swift */; };
 		FF6EA8C320EB712D00DCBF34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF6EA8C120EB712D00DCBF34 /* Main.storyboard */; };
@@ -15,9 +16,14 @@
 		FF6EA8D020EB7F8600DCBF34 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6EA8CF20EB7F8600DCBF34 /* Color.swift */; };
 		FFA18FFB20EE2F46004D4B53 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA18FFA20EE2F46004D4B53 /* MyCell.swift */; };
 		FFA18FFD20EE32B6004D4B53 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA18FFC20EE32B6004D4B53 /* HeaderCell.swift */; };
+		FFC2F27120EF32A00041979D /* searchbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2F27020EF32A00041979D /* searchbox.swift */; };
+		FFC2F27320EF73000041979D /* lowerHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2F27220EF73000041979D /* lowerHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2AAE58346F54753E32B1A3C9 /* Pods-moviee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moviee.release.xcconfig"; path = "Pods/Target Support Files/Pods-moviee/Pods-moviee.release.xcconfig"; sourceTree = "<group>"; };
+		571DDED039226FAE3A54947C /* Pods-moviee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moviee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-moviee/Pods-moviee.debug.xcconfig"; sourceTree = "<group>"; };
+		92D7993CA1E90C698C480C87 /* Pods_moviee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_moviee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF6EA8BA20EB712D00DCBF34 /* moviee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moviee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF6EA8BD20EB712D00DCBF34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF6EA8BF20EB712D00DCBF34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +34,8 @@
 		FF6EA8CF20EB7F8600DCBF34 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		FFA18FFA20EE2F46004D4B53 /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
 		FFA18FFC20EE32B6004D4B53 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		FFC2F27020EF32A00041979D /* searchbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchbox.swift; sourceTree = "<group>"; };
+		FFC2F27220EF73000041979D /* lowerHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lowerHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24A73E004253822B9E69FB52 /* Pods_moviee.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A66067C684F9B9FA6A38D934 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				571DDED039226FAE3A54947C /* Pods-moviee.debug.xcconfig */,
+				2AAE58346F54753E32B1A3C9 /* Pods-moviee.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E1421FA11C7F49185E2B8882 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92D7993CA1E90C698C480C87 /* Pods_moviee.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF6EA8B120EB712D00DCBF34 = {
 			isa = PBXGroup;
 			children = (
 				FF6EA8BC20EB712D00DCBF34 /* moviee */,
 				FF6EA8BB20EB712D00DCBF34 /* Products */,
+				A66067C684F9B9FA6A38D934 /* Pods */,
+				E1421FA11C7F49185E2B8882 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +91,8 @@
 				FF6EA8BD20EB712D00DCBF34 /* AppDelegate.swift */,
 				FF6EA8BF20EB712D00DCBF34 /* ViewController.swift */,
 				FF6EA8C120EB712D00DCBF34 /* Main.storyboard */,
+				FFC2F27220EF73000041979D /* lowerHeader.swift */,
+				FFC2F27020EF32A00041979D /* searchbox.swift */,
 				FFA18FFC20EE32B6004D4B53 /* HeaderCell.swift */,
 				FFA18FFA20EE2F46004D4B53 /* MyCell.swift */,
 				FF6EA8CF20EB7F8600DCBF34 /* Color.swift */,
@@ -80,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF6EA8CC20EB712E00DCBF34 /* Build configuration list for PBXNativeTarget "moviee" */;
 			buildPhases = (
+				08758E834133754FDA3EC3C7 /* [CP] Check Pods Manifest.lock */,
 				FF6EA8B620EB712D00DCBF34 /* Sources */,
 				FF6EA8B720EB712D00DCBF34 /* Frameworks */,
 				FF6EA8B820EB712D00DCBF34 /* Resources */,
+				7D35B9AD5B2CB1AAFFD9979F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,14 +171,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08758E834133754FDA3EC3C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-moviee-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D35B9AD5B2CB1AAFFD9979F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-moviee/Pods-moviee-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-moviee/Pods-moviee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FF6EA8B620EB712D00DCBF34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FF6EA8C020EB712D00DCBF34 /* ViewController.swift in Sources */,
+				FFC2F27120EF32A00041979D /* searchbox.swift in Sources */,
 				FFA18FFD20EE32B6004D4B53 /* HeaderCell.swift in Sources */,
 				FFA18FFB20EE2F46004D4B53 /* MyCell.swift in Sources */,
+				FFC2F27320EF73000041979D /* lowerHeader.swift in Sources */,
 				FF6EA8BE20EB712D00DCBF34 /* AppDelegate.swift in Sources */,
 				FF6EA8D020EB7F8600DCBF34 /* Color.swift in Sources */,
 			);
@@ -290,6 +365,7 @@
 		};
 		FF6EA8CD20EB712E00DCBF34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 571DDED039226FAE3A54947C /* Pods-moviee.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,6 +383,7 @@
 		};
 		FF6EA8CE20EB712E00DCBF34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AAE58346F54753E32B1A3C9 /* Pods-moviee.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

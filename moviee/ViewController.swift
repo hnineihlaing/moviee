@@ -7,7 +7,11 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
+let url = "https://yts.am/api/v2/list_movies.json?limit=5"
+//let url = "https://yts.am/api/v2/"
 class ViewController: UIViewController {
     
     @IBOutlet weak var lower: UICollectionView!
@@ -16,11 +20,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var favorite: UIButton!
     @IBOutlet weak var browse: UIButton!
     @IBOutlet weak var topRated: UILabel!
-    @IBOutlet weak var list: UILabel!
-    
+  //  @IBOutlet weak var list: UILabel!
+    @IBOutlet weak var searchbox: UITableView!
+    //var title = [String]()
+    var arrRes = [[String:AnyObject]]()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //STICKY HEADER????
+        if let layout = lower.collectionViewLayout as? UICollectionViewFlowLayout {
+            layout.sectionHeadersPinToVisibleBounds = true
+        }
+        searchbox.isHidden = true
+        searchbox.backgroundColor = UIColor.blue
         //set background color
         view.backgroundColor = UIColor(red:0.11, green:0.11, blue:0.12, alpha:1.0)
         
@@ -37,11 +49,38 @@ class ViewController: UIViewController {
         topRated.font =  UIFont(name: "SFProText-Regular", size: 3)
         topRated.font = topRated.font.withSize(15)
         
-        list.text = "List"
-        list.textColor = UIColor.lightGray
-        list.font =  UIFont(name: "SFProText-Regular", size: 3)
-        list.font = list.font.withSize(15)
+       // list.text = "List"
+     //   list.textColor = UIColor.lightGray
+       // list.font =  UIFont(name: "SFProText-Regular", size: 3)
+       // list.font = list.font.withSize(15)
+        /*
+        let parameters : [String: Any] = [
+            "title" : title
+        ]
+        request(url, method: HTTPMethod.post, parameters: parameters, encoding: JSONEncoding.default, headers: nil).responseJSON(completionHandler: { (response) in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(response.result.value!)
+                if let resData = json[].arrayObject {
+                    self.title = resData as [AnyObject] as! [String]; ()
+                }
+                //let json = value as! [String: Any]
+                //let datas = json["title"] as! [String]
+           //    let ii = 0 ..< datas.count
+           //     for i in ii {
+ 
+             //       self.title.append(datas[i])
+             //   }
+                //self.arrRes = json["title"] as! [[String : AnyObject]]
+                
+                break
+                
+            case .failure(let error):
+                break
+            }
+        })*/
     }
+    
     
     
     override func didReceiveMemoryWarning() {
@@ -50,40 +89,43 @@ class ViewController: UIViewController {
     }
 
 
-    @IBAction func searchClick(_ sender: Any) {
-        let searchController = UISearchController(searchResultsController: nil)
-        
-        // Set any properties (in this case, don't hide the nav bar and don't show the emoji keyboard option)
-        searchController.hidesNavigationBarDuringPresentation = false
-        searchController.searchBar.keyboardType = UIKeyboardType.asciiCapable
-        
-        // Make this class the delegate and present the search
-        self.searchController.searchBar.delegate = self
-        present(searchController, animated: true, completion: nil)
-    }
+
 }
 
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == self.upper {
             return 5
         }
         else {
-            return 13
+            return 20
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
             return UIEdgeInsetsMake(0, 0, 0, 0)
     }
-    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "lowerHeader", for: indexPath) as! lowerHeader
+            header.list.text = "List"
+            header.list.textColor = UIColor.lightGray
+            header.list.font =  UIFont(name: "SFProText-Regular", size: 3)
+            header.list.font = header.list.font.withSize(15)
+            header.backgroundColor = UIColor(red:0.11, green:0.11, blue:0.12, alpha:1.0)
+            return header
+        
+    }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if collectionView == self.upper {
             let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "headerCell", for: indexPath) as! HeaderCell
             collectionView.backgroundColor = UIColor(red:0.11, green:0.11, blue:0.12, alpha:1.0)
             myCell.backgroundColor = UIColor.blue
-            myCell.nameInHeader.text = "ADAM SANDLER'S"
+            //var dict = arrRes[0]
+            //myCell.nameInHeader?.text = dict["title"] as? String
+            //myCell.nameInHeader.text = "ADAM SANDLER'S"
             myCell.nameInHeader.textColor = UIColor(red:1.00, green:0.23, blue:0.26, alpha:1.0)
             myCell.nameInHeader.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 22)
             return myCell
@@ -93,7 +135,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
             let myCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellB", for: indexPath) as! MyCell
             collectionView.backgroundColor = UIColor(red:0.11, green:0.11, blue:0.12, alpha:1.0)
             myCell.backgroundColor = UIColor.brown
-            myCell.name.text = "ADAM SANDLER'S"
+           // myCell.name.text = "ADAM SANDLER'S"
             //myCell.backgroundColor = UIColor.gray
             myCell.name.textColor = UIColor(red:1.00, green:0.23, blue:0.26, alpha:1.0)
             myCell.name.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 16.0)

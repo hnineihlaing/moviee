@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "moviee/ViewController.swift"
-            timestampString = "552545435.967693"
+            timestampString = "552800959.39657"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "collectionView(_:layout:sizeForItemAt:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

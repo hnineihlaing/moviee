@@ -8,4 +8,7 @@ target 'moviee' do
   # Pods for moviee
   pod 'Alamofire', '4.4.0'
   pod 'SwiftyJSON'
+  pod 'SDWebImage', '~> 4.0'
+  pod 'Cosmos'
+  pod 'RealmSwift'
 end

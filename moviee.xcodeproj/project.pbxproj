@@ -8,15 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		24A73E004253822B9E69FB52 /* Pods_moviee.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D7993CA1E90C698C480C87 /* Pods_moviee.framework */; };
+		FF030D8720F5B67900D9E2BB /* cellSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF030D8620F5B67900D9E2BB /* cellSize.swift */; };
+		FF030D8920F5B77900D9E2BB /* label.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF030D8820F5B77900D9E2BB /* label.swift */; };
+		FF030D8B20F5BF9900D9E2BB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF030D8A20F5BF9900D9E2BB /* DetailViewController.swift */; };
+		FF030D8D20F613FD00D9E2BB /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF030D8C20F613FD00D9E2BB /* FavoriteViewController.swift */; };
+		FF030D8F20F61A1900D9E2BB /* favoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF030D8E20F61A1900D9E2BB /* favoriteCell.swift */; };
+		FF1D91E420FC648D0093A6B8 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1D91E320FC648D0093A6B8 /* SearchViewController.swift */; };
+		FF56B200210EEF8A002462AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF56B1FF210EEF8A002462AE /* ViewController.swift */; };
 		FF6EA8BE20EB712D00DCBF34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6EA8BD20EB712D00DCBF34 /* AppDelegate.swift */; };
-		FF6EA8C020EB712D00DCBF34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6EA8BF20EB712D00DCBF34 /* ViewController.swift */; };
 		FF6EA8C320EB712D00DCBF34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF6EA8C120EB712D00DCBF34 /* Main.storyboard */; };
 		FF6EA8C520EB712E00DCBF34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF6EA8C420EB712E00DCBF34 /* Assets.xcassets */; };
 		FF6EA8C820EB712E00DCBF34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF6EA8C620EB712E00DCBF34 /* LaunchScreen.storyboard */; };
 		FF6EA8D020EB7F8600DCBF34 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6EA8CF20EB7F8600DCBF34 /* Color.swift */; };
+		FF782B3320F31FC000B80F4A /* Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF782B3220F31FC000B80F4A /* Toolbar.swift */; };
+		FF782B3520F351E700B80F4A /* FavMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF782B3420F351E700B80F4A /* FavMovie.swift */; };
+		FF918E2D2105C90500FC4225 /* LowerFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF918E2C2105C90500FC4225 /* LowerFooter.swift */; };
 		FFA18FFB20EE2F46004D4B53 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA18FFA20EE2F46004D4B53 /* MyCell.swift */; };
 		FFA18FFD20EE32B6004D4B53 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA18FFC20EE32B6004D4B53 /* HeaderCell.swift */; };
-		FFC2F27120EF32A00041979D /* searchbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2F27020EF32A00041979D /* searchbox.swift */; };
 		FFC2F27320EF73000041979D /* lowerHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC2F27220EF73000041979D /* lowerHeader.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,17 +32,25 @@
 		2AAE58346F54753E32B1A3C9 /* Pods-moviee.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moviee.release.xcconfig"; path = "Pods/Target Support Files/Pods-moviee/Pods-moviee.release.xcconfig"; sourceTree = "<group>"; };
 		571DDED039226FAE3A54947C /* Pods-moviee.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moviee.debug.xcconfig"; path = "Pods/Target Support Files/Pods-moviee/Pods-moviee.debug.xcconfig"; sourceTree = "<group>"; };
 		92D7993CA1E90C698C480C87 /* Pods_moviee.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_moviee.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF030D8620F5B67900D9E2BB /* cellSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellSize.swift; sourceTree = "<group>"; };
+		FF030D8820F5B77900D9E2BB /* label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = label.swift; sourceTree = "<group>"; };
+		FF030D8A20F5BF9900D9E2BB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FF030D8C20F613FD00D9E2BB /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		FF030D8E20F61A1900D9E2BB /* favoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoriteCell.swift; sourceTree = "<group>"; };
+		FF1D91E320FC648D0093A6B8 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		FF56B1FF210EEF8A002462AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF6EA8BA20EB712D00DCBF34 /* moviee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moviee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF6EA8BD20EB712D00DCBF34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF6EA8BF20EB712D00DCBF34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FF6EA8C220EB712D00DCBF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF6EA8C420EB712E00DCBF34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF6EA8C720EB712E00DCBF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF6EA8C920EB712E00DCBF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF6EA8CF20EB7F8600DCBF34 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		FF782B3220F31FC000B80F4A /* Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toolbar.swift; sourceTree = "<group>"; };
+		FF782B3420F351E700B80F4A /* FavMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavMovie.swift; sourceTree = "<group>"; };
+		FF918E2C2105C90500FC4225 /* LowerFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowerFooter.swift; sourceTree = "<group>"; };
 		FFA18FFA20EE2F46004D4B53 /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
 		FFA18FFC20EE32B6004D4B53 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
-		FFC2F27020EF32A00041979D /* searchbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchbox.swift; sourceTree = "<group>"; };
 		FFC2F27220EF73000041979D /* lowerHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lowerHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +83,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FF1D91E020FC63E10093A6B8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FF030D8C20F613FD00D9E2BB /* FavoriteViewController.swift */,
+				FF030D8A20F5BF9900D9E2BB /* DetailViewController.swift */,
+				FF1D91E320FC648D0093A6B8 /* SearchViewController.swift */,
+				FF56B1FF210EEF8A002462AE /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FF1D91E120FC63FE0093A6B8 /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				FF782B3220F31FC000B80F4A /* Toolbar.swift */,
+				FF030D8820F5B77900D9E2BB /* label.swift */,
+				FF6EA8CF20EB7F8600DCBF34 /* Color.swift */,
+				FF030D8620F5B67900D9E2BB /* cellSize.swift */,
+			);
+			path = custom;
+			sourceTree = "<group>";
+		};
+		FF1D91E220FC64500093A6B8 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				FFC2F27220EF73000041979D /* lowerHeader.swift */,
+				FFA18FFA20EE2F46004D4B53 /* MyCell.swift */,
+				FF030D8E20F61A1900D9E2BB /* favoriteCell.swift */,
+				FFA18FFC20EE32B6004D4B53 /* HeaderCell.swift */,
+				FF918E2C2105C90500FC4225 /* LowerFooter.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
 		FF6EA8B120EB712D00DCBF34 = {
 			isa = PBXGroup;
 			children = (
@@ -89,13 +139,11 @@
 			isa = PBXGroup;
 			children = (
 				FF6EA8BD20EB712D00DCBF34 /* AppDelegate.swift */,
-				FF6EA8BF20EB712D00DCBF34 /* ViewController.swift */,
+				FF1D91E020FC63E10093A6B8 /* ViewControllers */,
+				FF782B3420F351E700B80F4A /* FavMovie.swift */,
 				FF6EA8C120EB712D00DCBF34 /* Main.storyboard */,
-				FFC2F27220EF73000041979D /* lowerHeader.swift */,
-				FFC2F27020EF32A00041979D /* searchbox.swift */,
-				FFA18FFC20EE32B6004D4B53 /* HeaderCell.swift */,
-				FFA18FFA20EE2F46004D4B53 /* MyCell.swift */,
-				FF6EA8CF20EB7F8600DCBF34 /* Color.swift */,
+				FF1D91E220FC64500093A6B8 /* cells */,
+				FF1D91E120FC63FE0093A6B8 /* custom */,
 				FF6EA8C420EB712E00DCBF34 /* Assets.xcassets */,
 				FF6EA8C620EB712E00DCBF34 /* LaunchScreen.storyboard */,
 				FF6EA8C920EB712E00DCBF34 /* Info.plist */,
@@ -198,11 +246,19 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-moviee/Pods-moviee-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,12 +273,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF6EA8C020EB712D00DCBF34 /* ViewController.swift in Sources */,
-				FFC2F27120EF32A00041979D /* searchbox.swift in Sources */,
 				FFA18FFD20EE32B6004D4B53 /* HeaderCell.swift in Sources */,
+				FF030D8B20F5BF9900D9E2BB /* DetailViewController.swift in Sources */,
+				FF782B3320F31FC000B80F4A /* Toolbar.swift in Sources */,
 				FFA18FFB20EE2F46004D4B53 /* MyCell.swift in Sources */,
+				FF030D8720F5B67900D9E2BB /* cellSize.swift in Sources */,
 				FFC2F27320EF73000041979D /* lowerHeader.swift in Sources */,
 				FF6EA8BE20EB712D00DCBF34 /* AppDelegate.swift in Sources */,
+				FF1D91E420FC648D0093A6B8 /* SearchViewController.swift in Sources */,
+				FF030D8D20F613FD00D9E2BB /* FavoriteViewController.swift in Sources */,
+				FF782B3520F351E700B80F4A /* FavMovie.swift in Sources */,
+				FF030D8F20F61A1900D9E2BB /* favoriteCell.swift in Sources */,
+				FF030D8920F5B77900D9E2BB /* label.swift in Sources */,
+				FF918E2D2105C90500FC4225 /* LowerFooter.swift in Sources */,
+				FF56B200210EEF8A002462AE /* ViewController.swift in Sources */,
 				FF6EA8D020EB7F8600DCBF34 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,6 +433,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DY7SHZZU7;
 				INFOPLIST_FILE = moviee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -387,6 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DY7SHZZU7;
 				INFOPLIST_FILE = moviee/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
